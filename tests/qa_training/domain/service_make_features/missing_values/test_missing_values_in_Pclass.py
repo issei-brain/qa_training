@@ -7,8 +7,8 @@ from qa_training.utils.my_assert_frame_equal import MyAssert
 @pytest.fixture()
 def fixture_run():
     service = ServiceMakeFeatures()
-    df_customer_info = pd.read_csv("tests/qa_training/domain/service_make_features/missing_values/df_customer_info_age_missing.csv")
-    df_filled_expected = pd.read_csv("tests/qa_training/domain/service_make_features/missing_values/df_filled_expected.csv")
+    df_customer_info = pd.read_csv("tests/qa_training/domain/service_make_features/missing_values/df_customer_info_Pclass_missing.csv")
+    df_filled_expected = pd.read_csv("tests/qa_training/domain/service_make_features/missing_values/df_customer_info_expected_Pclass.csv")
 
     return service, df_customer_info, df_filled_expected
 
